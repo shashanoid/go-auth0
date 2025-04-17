@@ -15,6 +15,8 @@ A simple demo showing how to integrate Auth0 authentication with MCP-GO. This to
    go run main.go
    ```
 
+3. Add the executable claude, cursor mcp
+
 3. Available commands:
    - `login` - Start Auth0 authentication flow
    - `get_token` - View your current access token
