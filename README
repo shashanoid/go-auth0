@@ -1,0 +1,27 @@
+# Auth0 Demo with MCP-GO 🚀
+
+A simple demo showing how to integrate Auth0 authentication with MCP-GO. This tool lets you manage authentication state and access protected data through a command-line interface.
+
+## Quick Start
+
+1. Set up your Auth0 credentials in `main.go`:
+   - `auth0Domain`
+   - `auth0ClientID` 
+   - `auth0ClientSecret`
+   - `auth0Audience` (optional)
+
+2. Run the application:
+   ```bash
+   go run main.go
+   ```
+
+3. Available commands:
+   - `login` - Start Auth0 authentication flow
+   - `get_token` - View your current access token
+   - `get_data` - Retrieve stored data
+   - `logout` - End your session
+
+## How it Works
+
+The app runs both an MCP server for CLI interactions and a local HTTP server (port 8080) to handle Auth0 callbacks. When you log in, it'll open your browser for Auth0 authentication and store your tokens securely in memory.
+
